@@ -26,7 +26,7 @@ public class GameView extends JPanel {
 	public GameView(Game model) {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
-		setBackground(Color.LIGHT_GRAY);
+		setBackground(Color.ORANGE);
 
 		// djh2-KEC119-21: changed from 30 to 45
 		// djh2-YCPlaptop: change from 45 to 100
@@ -66,11 +66,11 @@ public class GameView extends JPanel {
 		
 		// djh2-KEC110-21: changed from GREEN to RED
 		// djh2-YCPlaptop: change from RED to YELLOW
-		g.setColor(Color.PINK);
+		g.setColor(Color.RED);
 
 		Square square = model.getSquare();
 		
-		g.fillOval((int) square.getX(), (int) square.getY(), (int) square.getWidth()*2, (int) square.getHeight()*2);
+		g.fillOval((int) square.getX(), (int) square.getY(), (int) square.getWidth()*3, (int) square.getHeight()*3);
 	}
 	
 	public static void main(String[] args) {
