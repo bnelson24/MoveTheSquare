@@ -27,11 +27,9 @@ public class GameView extends JPanel {
 	public GameView(Game model) {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
-<<<<<<< HEAD
-		setBackground(Color.BLACK);
-=======
+
 		setBackground(CUSTOM_PURPLE);
->>>>>>> refs/remotes/dmoore29/master
+//>>>>>>> refs/remotes/dmoore29/master
 
 		// djh2-KEC119-21: changed from 30 to 45
 		// djh2-YCPlaptop: change from 45 to 100
@@ -93,13 +91,10 @@ public class GameView extends JPanel {
 				Square square = new Square();
 				square.setX(300.0);
 				square.setY(220.0);
-<<<<<<< HEAD
-				square.setWidth(4.0);
-				square.setHeight(4.0);
-=======
+
 				square.setWidth(80.0);
 				square.setHeight(80.0);
->>>>>>> refs/remotes/dmoore29/master
+//>>>>>>> refs/remotes/dmoore29/master
 				model.setSquare(square);
 				
 				
